@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&family=Roboto+Slab&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>StartUp</title>
 </head>
 <body>
@@ -123,32 +124,32 @@
                     <a href="#" class="filter">Strategy</a>
                 </div>
                 <div class="works">
-                    <div class="work">
-                        <img src="img/works/1.png" alt="">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work_image" src="img/works/1.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/2.png" alt="">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work_image" src="img/works/2.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/3.png" alt="">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img class="work_image" src="img/works/3.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/4.png" alt="">
+                    <div class="work" data-modal="#modal_project_4">
+                        <img class="work_image" src="img/works/4.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/5.png" alt="">
+                    <div class="work" data-modal="#modal_project_5">
+                        <img class="work_image" src="img/works/5.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/6.png" alt="">
+                    <div class="work" data-modal="#modal_project_6">
+                        <img class="work_image" src="img/works/6.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/7.png" alt="">
+                    <div class="work" data-modal="#modal_project_7">
+                        <img class="work_image" src="img/works/7.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/8.png" alt="">
+                    <div class="work" data-modal="#modal_project_8">
+                        <img class="work_image" src="img/works/8.png" alt="">
                     </div>
-                    <div class="work">
-                        <img src="img/works/9.png" alt="">
+                    <div class="work" data-modal="#modal_project_9">
+                        <img class="work_image" src="img/works/9.png" alt="">
                     </div>
                 </div>
             </div>
@@ -190,7 +191,7 @@
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam
                             </div>
                             <div class="blog_button">
-                                <a href="#" class="blog_btn">Read more</a>
+                                <a data-modal="#modal_project_10" href="#" class="blog_btn">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +209,7 @@
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam
                             </div>
                             <div class="blog_button">
-                                <a href="#" class="blog_btn">Read more</a>
+                                <a data-modal="#modal_project_11" href="#" class="blog_btn">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -245,21 +246,21 @@
                     <div class="contact_adress">
                        <div class="adressicon">
                        <img class="adressic" src="img/location.png" alt="">
-                        <div class="contact_adress_adress">
+                        <div class="contact_adress_info">
                            <h4 class="contact_adress_title">ADRESS</h4>
                             312, 7th Ave, New York<br>NY 101200, United States of America
                         </div>
                        </div>
                        <div class="adressicon">
                        <img class="adressic" src="img/phone-call.png" alt="">
-                        <div class="contact_adress_hotline">
+                        <div class="contact_adress_info">
                            <h4 class="contact_adress_title">HOTLINE</h4>
-                            +65 0052 300, +65 88251 210<br>+88 01723 511 340
+                            +65 0052 300<br> +65 88251 210<br>+88 01723 511 340
                         </div>
                        </div>
                        <div class="adressicon">
                        <img class="adressic" src="img/email.png" alt="">
-                        <div class="contact_adress_email">
+                        <div class="contact_adress_info">
                            <h4 class="contact_adress_title">E-MAIL</h4>
                             shapedtheme@gmail.com<br>khalilkode@gmail.com
                         </div>
@@ -297,6 +298,349 @@
         </div>
     </footer>
 
+<!--MODAL-->
+
+    <div class="modal" id="modal_project_1">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_2">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_3">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_4">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_5">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_6">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_7">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_8">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_9">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/works/9.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_10">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/blog/1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_11">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/blog/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Project title</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2018</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -316,9 +660,7 @@
 
 
 
-
-
-
+<script src="js/app.js"></script>
 
 </body>
 </html>
